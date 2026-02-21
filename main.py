@@ -46,7 +46,6 @@ def return_coins(response: Response):
     _coins_inserted = 0
     return
 
-# are the insufficient coins being returned
 
 # Return the remaining inventory for all drinks.
 @app.get("/inventory")
