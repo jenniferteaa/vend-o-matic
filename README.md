@@ -1,5 +1,8 @@
 # Vend-O-Matic (FastAPI)
 
+Hello!
+I have implemented the design for Vend-O-Matic in a lightweight HTTP service built with FastAPI that simulates the behavior of a beverage vending machine according to the provided specification. The system maintains in-memory state for three beverage slots (each initialized with five items) and tracks inserted quarters, accepting one coin per request. Each beverage costs two quarters; the service validates funds and inventory before dispensing exactly one item per transaction, returning appropriate HTTP status codes and required headers for change and remaining stock. Additional endpoints allow clients to view inventory levels and return inserted coins. The implementation strictly follows the defined API specifications, uses minimal dependencies, and is designed to be easily tested via standard HTTP requests.
+
 A simple in-memory vending machine API built with FastAPI.
 
 ## Setup
