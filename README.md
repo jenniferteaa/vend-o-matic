@@ -50,11 +50,12 @@ Use **Swagger UI** to test endpoints:
   - Returns `204` and `X-Coins` header.
 
 - `GET /inventory`
-  - Returns the current inventory as a dict of `name: count`.
+  - Returns the current inventory as a JSON array of counts.
+  - Index mapping: `0` is item_id `1`, `1` is item_id `2`, `2` is item_id `3`.
 
 - `GET /inventory/{item_id}`
-  - Returns the count for a specific item ID.
-  - IDs: `1=coke`, `2=pepsi`, `3=fanta`.
+  - Returns the count (integer) for a specific item ID.
+  - Valid IDs: `1`, `2`, `3`.
 
 - `PUT /inventory/{item_id}`
   - Vends one item if 2 coins have been inserted.
